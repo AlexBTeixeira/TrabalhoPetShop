@@ -63,7 +63,7 @@ function checkFields() {
         return true;
   }
 
-var imagens = ["/images/banner3.png", "/images/banner2.png"];
+var imagens = ["https://alexbteixeira.github.io/TrabalhoPetShop/images/banner3.png", "https://alexbteixeira.github.io/TrabalhoPetShop/images/banner2.png"];
 var indiceAtual = 0;
 
 function mudarImagem() {
