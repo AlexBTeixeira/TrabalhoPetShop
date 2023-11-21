@@ -78,7 +78,7 @@ function mudarImagem() {
 
   // Aguarda um curto período para permitir a transição antes de alterar a imagem
   setTimeout(function() {
-    imagemElement.src = imagens[indiceAtual];
+    imagemElement.src = TrabalhoPetShop/imagens[indiceAtual];
     // Zera a transformação para a próxima transição
     imagemElement.style.transform = "translateX(0)";
   }, 1000); // 1000 milissegundos = 1 segundo
