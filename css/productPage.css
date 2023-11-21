@@ -1,0 +1,300 @@
+.card {
+  flex: 0 0 auto; /* Isso impede que os cartões sejam esticados */
+  width: 1rem; /* Isso define um tamanho fixo para os cartões */
+  background-color: lightgray 90%;
+  border-color: darkgray;
+}
+
+.card-deck {
+  display: flex !important;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: auto;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) saturate(100%) invert(38%);
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+}
+.nav-link {
+  color: black;
+}
+.navbar-brand {
+  color: black;
+}
+
+.page-header {
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.page-header {
+  padding: 0px 160px 0px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  align-items:center ;
+}
+.como-montar-um-pet-shop-1-1 {
+  flex-shrink: 0;
+  width: 1170px;
+  height: 420px;
+  position: relative;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: absolute;
+  left: calc(50% - -134.5px);
+  top: calc(50% - -24px);
+}
+.nossos-produtos {
+  color: #000000;
+  text-align: left;
+  font: var(--headline-3, 500 54px/58px "Poppins-Medium", sans-serif);
+  position: relative;
+}
+.confira-nossos-produtos {
+  color: #000000;
+  text-align: center;
+  font: var(--body-1, 400 20px/32px "Inter-Regular", sans-serif);
+  position: relative;
+}
+
+h1,
+h2 {
+  margin-left: 135px;
+  margin-top: 50px;
+  padding-left: 0;
+}
+h2 {
+  margin-top: 75px;
+}
+
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  margin-top: 5%;
+  background: var(--neutral-07-100, #141718);
+  padding: 80px 160px 32px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  width:auto;
+}
+.footer-content {
+  flex-shrink: 0;
+  width: 1120px;
+  height: 32px;
+  position: relative;
+}
+.logo-and-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1120px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.logo-and-slogan {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 544px;
+  position: relative;
+}
+.logo {
+  flex-shrink: 0;
+  width: 105px;
+  height: 24px;
+  position: relative;
+}
+.name {
+  color: #ffffff;
+  text-align: center;
+  font: 500 24px/24px "Poppins-Medium", sans-serif;
+  position: absolute;
+  left: -5px;
+  top: 0px;
+}
+.rectangle-319 {
+  background: var(--neutral-04-100, #6c7275);
+  flex-shrink: 0;
+  width: 1px;
+  height: 24px;
+  position: relative;
+}
+.store {
+  color: var(--neutral-03-100, #e8ecef);
+  text-align: left;
+  font: var(--caption-1, 400 14px/22px "Inter-Regular", sans-serif);
+  position: relative;
+  width: 350px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.home {
+  color: var(--neutral-01-100, #fefefe);
+  text-align: left;
+  font: var(--caption-1, 400 14px/22px "Inter-Regular", sans-serif);
+  position: relative;
+}
+.shop {
+  color: var(--neutral-01-100, #fefefe);
+  text-align: left;
+  font: var(--caption-1, 400 14px/22px "Inter-Regular", sans-serif);
+  position: relative;
+}
+.contact-us {
+  color: var(--neutral-01-100, #fefefe);
+  text-align: left;
+  font: var(--caption-1, 400 14px/22px "Inter-Regular", sans-serif);
+  position: relative;
+}
+.bottom-bar {
+  border-style: solid;
+  border-color: var(--neutral-04-100, #6c7275);
+  border-width: 0.5px 0px 0px 0px;
+  padding: 16px 0px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1118px;
+  position: relative;
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.copyright-2023-all-rights-reserved {
+  color: var(--neutral-03-100, #e8ecef);
+  text-align: left;
+  font: var(--caption-2, 400 12px/20px "Poppins-Regular", sans-serif);
+  position: relative;
+}
+.privacy-policy {
+  color: var(--neutral-01-100, #fefefe);
+  text-align: left;
+  font: var(--caption-2-bold, 600 12px/20px "Poppins-SemiBold", sans-serif);
+  position: relative;
+}
+.terms-of-use {
+  color: var(--neutral-01-100, #fefefe);
+  text-align: left;
+  font: var(--caption-2-bold, 600 12px/20px "Poppins-SemiBold", sans-serif);
+  position: relative;
+}
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.social-outline-instagram {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.vector {
+  border-radius: 4px;
+  border-style: solid;
+  border-color: var(--neutral-01-100, #fefefe);
+  border-width: 1.5px;
+  position: absolute;
+  right: 8.33%;
+  left: 8.33%;
+  width: 83.33%;
+  bottom: 8.33%;
+  top: 8.33%;
+  height: 83.33%;
+}
+.vector2 {
+  background: var(--neutral-01-100, #fefefe);
+  border-radius: 50%;
+  position: absolute;
+  right: 20.83%;
+  left: 70.83%;
+  width: 8.33%;
+  bottom: 70.83%;
+  top: 20.83%;
+  height: 8.33%;
+}
+.vector3 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: var(--neutral-01-100, #fefefe);
+  border-width: 1.5px;
+  position: absolute;
+  right: 29.17%;
+  left: 29.17%;
+  width: 41.67%;
+  bottom: 29.17%;
+  top: 29.17%;
+  height: 41.67%;
+}
+.social-outline-facebook {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.social-outline-youtube {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.navbar{
+  background-color: #ffffff;
+}
+
+#banner {
+  transition: transform 3s step-end;
+}

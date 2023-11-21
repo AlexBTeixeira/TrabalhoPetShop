@@ -1,0 +1,57 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.border-md {
+    border-width: 2px;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+.form-control:not(select) {
+    padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+    height: 52px;
+    padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.image img {
+    margin-left: -50px;  /* Ajuste o valor conforme necessário */
+    size: 150%;
+}
+
+.criarconta{
+    margin-bottom: 25px;
+}
+
+.row{
+    margin-top: -50px;
+}
+
+.btn:disabled {
+    background-color: #6c757d; /* Cor de fundo cinza */
+    cursor: not-allowed; /* Altera o cursor para "não permitido" */
+    border-color: #6c757d; /* Cor da borda cinza */
+  }
+
+.form-check {
+    margin-bottom: 25px;
+}
+

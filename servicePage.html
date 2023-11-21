@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/servicePage.css">
+  <title>Carrossel de Produtos</title>
+</head>
+
+<body>
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="login.html">PetMania</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="productPage.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner -->
+  <div class="page-header">
+    <img class="como-montar-um-pet-shop-1-1" src="https://placehold.it/300x200" />
+    <div class="title">
+      <div class="nossos-produtos">Nossos Produtos</div>
+      <div class="confira-nossos-produtos">Confira nossos Produtos</div>
+    </div>
+  </div>
+  <div class="message">
+    <h5>Por favor, escolha abaixo, entre os nossos serviços, os necessários para o seu pet e nos forneça algumas
+      informações necessárias para que possamos atendê-lo da melhor forma possível.</h5>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+
+      <!-- First Card -->
+      <div class="col-md-6">
+        <div class="card" id="card1" onclick="toggleSelection('card1', event)">
+          <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Banho</h5>
+            <p class="card-text">Some text for the first card.</p>
+            <a href="#" class="btn btn-primary">Select Card 1</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="col-md-6">
+        <div class="card" id="card2" onclick="toggleSelection('card2', event)">
+          <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
+          <div class="card-body">
+            <h5 class="card-title">Tosa</h5>
+            <p class="card-text">Some text for the second card.</p>
+            <a href="#" class="btn btn-primary">Select Card 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="aboutPet">
+    <h1>Sobre o Seu Pet</h1>
+  </div>
+
+  <div class="container">
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label for="petName">Qual é o nome do seu Pet?</label>
+          <input type="text" class="form-control" id="petName" name="petName" required oninput="checkFields()">
+        </div>
+
+        <div class="form-group">
+          <label>Tipo</label>
+          <div class="radio-card">
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="tipoCachorro" name="tipo" value="cachorro" required>
+              <label class="form-check-label" for="tipoCachorro">Cachorro</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="tipoGato" name="tipo" value="gato" required>
+              <label class="form-check-label" for="tipoGato">Gato</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Porte</label>
+          <div class="radio-card">
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="portePequeno" name="porte" value="pequeno" required>
+              <label class="form-check-label" for="portePequeno">Pequeno</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="porteMedio" name="porte" value="medio" required>
+              <label class="form-check-label" for="porteMedio">Médio</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="porteGrande" name="porte" value="grande" required>
+              <label class="form-check-label" for="porteGrande">Grande</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Classifique o temperamento do seu pet</label>
+          <div class="number-selector">
+            <label for="temperamento">Dócil</label>
+            <input type="range" class="form-control-range" id="temperamento" name="temperamento" min="1" max="10"
+              step="1" required>
+            <label for="temperamento">Difícil</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="aboutService">
+    <h1>Sobre o Serviço</h1>
+  </div>
+
+  <div class="container">
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label>Você quer tele busca?</label>
+          <div class="radio-card">
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="teleBuscaSim" name="teleBusca" value="sim" required>
+              <label class="form-check-label" for="teleBuscaSim">Sim</label>
+            </div>
+            <div class="form-check-inline">
+              <input type="radio" class="form-check-input" id="teleBuscaNao" name="teleBusca" value="nao" required>
+              <label class="form-check-label" for="teleBuscaNao">Não</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group date-time-selector" id="dateAndTimeSelector">
+          <label for="dataHora">Data e Horário para Telebusca</label>
+          <input type="datetime-local" id="dataHora" name="dataHora" onchange="checkFields()">
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="calculateServiceValue(event)" id="submitButton">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Adicione o modal do Bootstrap -->
+  <div class="modal" tabindex="-1" role="dialog" id="serviceSummaryModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Resumo do Serviço</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="serviceSummary"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Continuar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-content">
+      <div class="logo-and-links">
+        <div class="logo-and-slogan">
+          <div class="logo">
+            <div class="name">PetMania</div>
+          </div>
+          <div class="rectangle-319"></div>
+          <div class="store">Pethop</div>
+        </div>
+        <div class="nav">
+          <div class="home">Produtos</div>
+          <div class="shop">Serviços</div>
+          <div class="contact-us">Nos Contate</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="copyright">
+        <div class="copyright-2023-all-rights-reserved">
+          Copyright © 2023 PetMania. All rights reserved
+        </div>
+        <div class="privacy-policy">Politica de Privacidade</div>
+        <div class="terms-of-use">Termos de Uso</div>
+      </div>
+      <div class="social-icon">
+        <div class="social-outline-instagram">
+          <div class="vector"></div>
+          <div class="vector2"></div>
+          <div class="vector3"></div>
+        </div>
+        <svg class="social-outline-facebook" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z"
+            stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <svg class="social-outline-youtube" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="3" width="20" height="18" rx="4" stroke="#FEFEFE" stroke-width="1.5" />
+          <path
+            d="M10.4472 8.72361L15.2111 11.1056C15.9482 11.4741 15.9482 12.5259 15.2111 12.8944L10.4472 15.2764C9.78231 15.6088 9 15.1253 9 14.382V9.61803C9 8.87465 9.78231 8.39116 10.4472 8.72361Z"
+            stroke="#FEFEFE" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+
+    var selectedServices = [];
+
+    function toggleSelection(cardId, event) {
+      var card = document.getElementById(cardId);
+      card.classList.toggle('selected-card');
+      event.preventDefault();
+
+      var service = cardId; // Defina o serviço com o ID do card
+
+      if (selectedServices.includes(service)) {
+        selectedServices = selectedServices.filter(function (value, index, arr) {
+          return value != service;
+        });
+      } else {
+        selectedServices.push(service);
+        console.log(selectedServices);
+      }
+
+      card.classList.toggle('selected');
+    }
+      function calculateServiceValue(event) {
+        event.preventDefault();
+        // Obtenha o valor do tamanho do animal
+        var animalSize = document.querySelector('input[name="porte"]:checked').value;
+        var teleBusca = document.getElementById('teleBuscaSim').checked;
+        // Inicialize o valor total com 0
+        var totalValue = 0;
+
+        // Adicione o valor do serviço ao valor total
+        selectedServices.forEach(function (service) {
+          if (animalSize === 'pequeno') {
+            if (service === 'card1') totalValue += 40;
+            else if (service === 'card2') totalValue += 30;
+          } else if (animalSize === 'medio') {
+            if (service === 'card1') totalValue += 60;
+            else if (service === 'card2') totalValue += 55;
+          } else {
+            if (service === 'card1') totalValue += 80;
+            else if (service === 'card2') totalValue += 60;
+          }
+        });
+
+        if (teleBusca) totalValue += 50;
+
+
+        // Exiba o modal com o resumo do serviço e o valor total
+        document.getElementById('serviceSummary').innerText = 'O valor total do serviço é R$ ' + totalValue;
+        $('#serviceSummaryModal').modal('show');
+      }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var teleBuscaSim = document.getElementById('teleBuscaSim');
+      var dateAndTimeSelector = document.getElementById('dateAndTimeSelector');
+
+      teleBuscaSim.addEventListener('change', function () {
+        dateAndTimeSelector.style.display = teleBuscaSim.checked ? 'block' : 'none';
+      });
+    });
+  </script>
+
+<script>
+  checkFields();
+  function checkFields() {
+    var petName = document.getElementById('petName').value;
+    var tipo = document.querySelector('input[name="tipo"]:checked');
+    var porte = document.querySelector('input[name="porte"]:checked');
+    var temperamento = document.getElementById('temperamento').value;
+    var teleBusca = document.querySelector('input[name="teleBusca"]:checked');
+    var dataHora = document.getElementById('dataHora').value;
+
+    // Verifique se todos os campos obrigatórios estão preenchidos
+    if (petName && tipo && porte && temperamento && teleBusca) {
+      // Se tele busca for sim, verifique se o campo de dataHora também está preenchido
+      if (teleBusca.value === 'nao' || (teleBusca.value === 'sim' && dataHora)) {
+        document.getElementById('submitButton').disabled = false;
+      } else {
+        document.getElementById('submitButton').disabled = false;
+      }
+    } else {
+      document.getElementById('submitButton').disabled = true;
+    }
+  }
+</script>
+</body>
+</html>
