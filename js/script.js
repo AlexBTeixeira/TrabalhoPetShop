@@ -65,7 +65,7 @@ function checkFields() {
         return true;
   }
 
-var imagens = ["/images/banner.png", "/images/banner.jpg", "/images/imagem5.jpg"];
+var imagens = ["https://alexbteixeira.github.io/TrabalhoPetShop/images/banner.png", "https://alexbteixeira.github.io/TrabalhoPetShop/images/banner.jpg", "https://alexbteixeira.github.io/TrabalhoPetShop/images/imagem5.jpg"];
 var indiceAtual = 0;
 
 function mudarImagem() {
