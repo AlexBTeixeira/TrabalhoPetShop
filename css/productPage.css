@@ -84,7 +84,7 @@ h2 {
   padding-left: 0;
 }
 h2 {
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 .footer,
@@ -297,4 +297,13 @@ h2 {
 
 #banner {
   transition: transform 3s step-end;
+}
+
+.icons{
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.pesquisar{
+  margin-right: 15px;
 }

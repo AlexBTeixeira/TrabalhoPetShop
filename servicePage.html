@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/css/servicePage.css">
-  <title>Carrossel de Produtos</title>
+  <link rel="stylesheet" type="text/css" href="https://alexbteixeira.github.io/TrabalhoPetShop/css/servicePage.css">
+  <title>PetMania - Serviços</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   <!-- Barra de Navegação -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="login.html">PetMania</a>
+      <a class="navbar-brand" href="https://alexbteixeira.github.io/TrabalhoPetShop/index.html">PetMania</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item ">
-            <a class="nav-link active" aria-current="page" href="productPage.html">Produtos</a>
+            <a class="nav-link active" aria-current="page" href="https://alexbteixeira.github.io/TrabalhoPetShop/productPage.html">Produtos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Serviços</a>
@@ -30,49 +30,91 @@
         </ul>
       </div>
     </div>
+    <div class="icons" style="display: flex;">
+      <li>
+          <svg
+              class="pesquisar"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <path
+                  d="M18.5 18.5L22 22M21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21C16.7467 21 21 16.7467 21 11.5Z"
+                  stroke="#141718"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+              ></path>
+          </svg>
+      </li>
+      <li>
+          <svg
+              class="usuario"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <path
+                  d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99638 15 6.4346 16.8918 5.44117 19.5488M18.5588 19.5488C20.6672 17.7154 22 15.0134 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 15.0134 3.33285 17.7154 5.44117 19.5488M18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488M15 9C15 10.6569 13.6569 12 12 12C10.3431 12 9 10.6569 9 9C9 7.34315 10.3431 6 12 6C13.6569 6 15 7.34315 15 9Z"
+                  stroke="#141718"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+              ></path>
+          </svg>
+      </li>
+  </div>
   </nav>
   <!-- Banner -->
   <div class="page-header">
-    <img class="como-montar-um-pet-shop-1-1" src="https://placehold.it/300x200" />
-    <div class="title">
-      <div class="nossos-produtos">Nossos Produtos</div>
-      <div class="confira-nossos-produtos">Confira nossos Produtos</div>
+    <img class="como-montar-um-pet-shop-1-1" src="/images/bannerservice.png" />
+    <div class="message" id ="message">
+      <h5>Por favor, escolha abaixo, entre os nossos serviços, os necessários para o seu pet e nos forneça algumas
+        informações necessárias para que possamos atendê-lo da melhor forma possível.</h5>
     </div>
   </div>
-  <div class="message">
-    <h5>Por favor, escolha abaixo, entre os nossos serviços, os necessários para o seu pet e nos forneça algumas
-      informações necessárias para que possamos atendê-lo da melhor forma possível.</h5>
-  </div>
+
 
   <div class="container mt-5">
     <div class="row">
 
-      <!-- First Card -->
+      <!-- Tipos de Serviço -->
+      <!-- Banho -->
       <div class="col-md-6">
         <div class="card" id="card1" onclick="toggleSelection('card1', event)">
-          <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
+          <img src="images/banho.png" class="card-img-top" alt="Card Image">
           <div class="card-body">
             <h5 class="card-title">Banho</h5>
-            <p class="card-text">Some text for the first card.</p>
-            <a href="#" class="btn btn-primary">Select Card 1</a>
+            <p class="card-text">Nossa Tabela de Preços (por Porte):</p>
+            <span class="card-text"><b>Pequeno:</b> R$ 40,00</span><br/>
+            <span class="card-text"><b>Médio:</b> R$ 60,00</span><br/>
+            <span class="card-text"><b>Grande:</b> R$ 70,00</span><br/><br/>
+            <a href="#" class="btn btn-primary">Quero esse Serviço</a>
           </div>
         </div>
       </div>
 
-      <!-- Second Card -->
+      <!-- Tosa -->
       <div class="col-md-6">
         <div class="card" id="card2" onclick="toggleSelection('card2', event)">
-          <img src="https://placehold.it/300x200" class="card-img-top" alt="Card Image">
+          <img src="images/tosa.png" class="card-img-top" alt="Card Image">
           <div class="card-body">
             <h5 class="card-title">Tosa</h5>
-            <p class="card-text">Some text for the second card.</p>
-            <a href="#" class="btn btn-primary">Select Card 2</a>
+            <p class="card-text">Nossa Tabela de Preços (por Porte):</p>
+            <span class="card-text"><b>Pequeno:</b>  R$ 30,00</span><br/>
+            <span class="card-text"><b>Médio:</b> R$ 55,00</span><br/>
+            <span class="card-text"><b>Grande:</b> 60,00</span><br/><br/>
+            <a href="#" class="btn btn-primary">Quero esse Serviço</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Sobre o Seu Pet -->
   <div class="aboutPet">
     <h1>Sobre o Seu Pet</h1>
   </div>
@@ -80,11 +122,14 @@
   <div class="container">
     <div class="form-container">
       <form>
+
+        <!-- Nome do Pet -->
         <div class="form-group">
           <label for="petName">Qual é o nome do seu Pet?</label>
           <input type="text" class="form-control" id="petName" name="petName" required oninput="checkFields()">
         </div>
 
+        <!-- Tipo do Pet -->
         <div class="form-group">
           <label>Tipo</label>
           <div class="radio-card">
@@ -99,6 +144,7 @@
           </div>
         </div>
 
+        <!-- Porte do Pet -->
         <div class="form-group">
           <label>Porte</label>
           <div class="radio-card">
@@ -117,6 +163,7 @@
           </div>
         </div>
 
+        <!-- Temperamento do Pet -->
         <div class="form-group">
           <label>Classifique o temperamento do seu pet</label>
           <div class="number-selector">
@@ -130,6 +177,7 @@
     </div>
   </div>
 
+  <!-- Sobre o Serviço -->
   <div class="aboutService">
     <h1>Sobre o Serviço</h1>
   </div>
@@ -137,30 +185,37 @@
   <div class="container">
     <div class="form-container">
       <form>
+        <!-- Tele Busca -->
         <div class="form-group">
           <label>Você quer tele busca?</label>
           <div class="radio-card">
             <div class="form-check-inline">
-              <input type="radio" class="form-check-input" id="teleBuscaSim" name="teleBusca" value="sim" required>
+              <input type="radio" class="form-check-input" id="teleBuscaSim" name="teleBusca" value="sim"
+                onchange="checkFields()" required>
               <label class="form-check-label" for="teleBuscaSim">Sim</label>
             </div>
             <div class="form-check-inline">
-              <input type="radio" class="form-check-input" id="teleBuscaNao" name="teleBusca" value="nao" required>
+              <input type="radio" class="form-check-input" id="teleBuscaNao" name="teleBusca" value="nao"
+                onchange="checkFields()" required>
               <label class="form-check-label" for="teleBuscaNao">Não</label>
             </div>
           </div>
         </div>
 
+        <!-- Data e Hora para Tele Busca -->
         <div class="form-group date-time-selector" id="dateAndTimeSelector">
           <label for="dataHora">Data e Horário para Telebusca</label>
           <input type="datetime-local" id="dataHora" name="dataHora" onchange="checkFields()">
         </div>
-        <button type="submit" class="btn btn-primary" onclick="calculateServiceValue(event)" id="submitButton">Enviar</button>
+
+        <!-- Botão de Envio -->
+        <button type="submit" class="btn btn-primary" onclick="calculateServiceValue(event)"
+          id="submitButton">Enviar</button>
       </form>
     </div>
   </div>
 
-  <!-- Adicione o modal do Bootstrap -->
+  <!-- Modal do Resumo do Serviço -->
   <div class="modal" tabindex="-1" role="dialog" id="serviceSummaryModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -171,16 +226,38 @@
           </button>
         </div>
         <div class="modal-body">
+          <p id="serviceResume"></p>
           <p id="serviceSummary"></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Continuar</button>
+          <button type="button" class="btn btn-primary" id="continuar" data-dismiss="modal">Gostaria de Continuar?</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Modal de Finalização -->
+  <div class="modal modal" tabindex="-1" role="dialog" id="successModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Obrigado por nos Escolher</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Ficamos feliz por nos terem escolhido, pedimos que mantenha seu cadastro atualizado, entraremos em contato
+            pelo seu telefone de cadastro para acertar os detalhes do serviço</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"
+            onclick="window.location.href='https://alexbteixeira.github.io/TrabalhoPetShop/productPage.html'">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Footer -->
@@ -189,14 +266,14 @@
       <div class="logo-and-links">
         <div class="logo-and-slogan">
           <div class="logo">
-            <div class="name">PetMania</div>
+            <a class="name" href = "https://alexbteixeira.github.io/TrabalhoPetShop/index.html">PetMania</a>
           </div>
           <div class="rectangle-319"></div>
           <div class="store">Pethop</div>
         </div>
         <div class="nav">
-          <div class="home">Produtos</div>
-          <div class="shop">Serviços</div>
+          <a class="home" href = "https://alexbteixeira.github.io/TrabalhoPetShop/productPage.html">Produtos</a>
+          <a class="shop" href = "https://alexbteixeira.github.io/TrabalhoPetShop/servicePage.html">Serviços</a>
           <div class="contact-us">Nos Contate</div>
         </div>
       </div>
@@ -236,6 +313,11 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Scripts Personalizados -->
+  <!-- Mantidos jutno ao HTML para melhor performance -->
+
+  <!-- Controle de Serviço Selecionado -->
   <script>
 
     var selectedServices = [];
@@ -258,36 +340,47 @@
 
       card.classList.toggle('selected');
     }
-      function calculateServiceValue(event) {
-        event.preventDefault();
-        // Obtenha o valor do tamanho do animal
-        var animalSize = document.querySelector('input[name="porte"]:checked').value;
-        var teleBusca = document.getElementById('teleBuscaSim').checked;
-        // Inicialize o valor total com 0
-        var totalValue = 0;
+    function calculateServiceValue(event) {
+      event.preventDefault();
+      // Obtenha o valor do tamanho do animal
+      var animalSize = document.querySelector('input[name="porte"]:checked').value;
+      var animalName = document.getElementById('petName').value;
+      var teleBusca = document.getElementById('teleBuscaSim').checked;
+      // Inicialize o valor total com 0
+      var totalValue = 0;
 
-        // Adicione o valor do serviço ao valor total
-        selectedServices.forEach(function (service) {
-          if (animalSize === 'pequeno') {
-            if (service === 'card1') totalValue += 40;
-            else if (service === 'card2') totalValue += 30;
-          } else if (animalSize === 'medio') {
-            if (service === 'card1') totalValue += 60;
-            else if (service === 'card2') totalValue += 55;
-          } else {
-            if (service === 'card1') totalValue += 80;
-            else if (service === 'card2') totalValue += 60;
-          }
-        });
+      // Adicione o valor do serviço ao valor total
+      selectedServices.forEach(function (service) {
+        if (animalSize === 'pequeno') {
+          if (service === 'card1') totalValue += 40;
+          else if (service === 'card2') totalValue += 30;
+        } else if (animalSize === 'medio') {
+          if (service === 'card1') totalValue += 60;
+          else if (service === 'card2') totalValue += 55;
+        } else {
+          if (service === 'card1') totalValue += 80;
+          else if (service === 'card2') totalValue += 60;
+        }
+      });
 
-        if (teleBusca) totalValue += 50;
+      if (teleBusca) totalValue += 50;
 
 
-        // Exiba o modal com o resumo do serviço e o valor total
-        document.getElementById('serviceSummary').innerText = 'O valor total do serviço é R$ ' + totalValue;
-        $('#serviceSummaryModal').modal('show');
+      // Exiba o modal com o resumo do serviço e o valor total
+      document.getElementById('serviceSummary').innerText = 'Estamos anciosos para atender o(a) ' + animalName + '!';
+      console.log(totalValue)
+      if (totalValue === 0 || totalValue === 50) {
+        document.getElementById('serviceResume').innerText = 'Nenhum serviço foi selecionado';
+        document.getElementById('continuar').disabled = true;
       }
+      else {
+        document.getElementById('serviceResume').innerText = 'O valor total do serviço é R$ ' + totalValue;
+      }
+      $('#serviceSummaryModal').modal('show');
+    }
   </script>
+
+  <!-- Ouvinte de mudanças da opção de TeleBusca -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var teleBuscaSim = document.getElementById('teleBuscaSim');
@@ -299,28 +392,63 @@
     });
   </script>
 
-<script>
-  checkFields();
-  function checkFields() {
-    var petName = document.getElementById('petName').value;
-    var tipo = document.querySelector('input[name="tipo"]:checked');
-    var porte = document.querySelector('input[name="porte"]:checked');
-    var temperamento = document.getElementById('temperamento').value;
-    var teleBusca = document.querySelector('input[name="teleBusca"]:checked');
-    var dataHora = document.getElementById('dataHora').value;
 
-    // Verifique se todos os campos obrigatórios estão preenchidos
-    if (petName && tipo && porte && temperamento && teleBusca) {
-      // Se tele busca for sim, verifique se o campo de dataHora também está preenchido
-      if (teleBusca.value === 'nao' || (teleBusca.value === 'sim' && dataHora)) {
-        document.getElementById('submitButton').disabled = false;
+<!-- Função para somente perfmitir o usuario clicar no botão 
+    se todos os tampos estiverem ok -->
+  <script>
+    function checkFields() {
+      var petName = document.getElementById('petName').value;
+      var tipo = document.querySelector('input[name="tipo"]:checked');
+      var porte = document.querySelector('input[name="porte"]:checked');
+      var temperamento = document.getElementById('temperamento').value;
+      var teleBusca = document.querySelector('input[name="teleBusca"]:checked');
+      var dataHora = document.getElementById('dataHora').value;
+
+      // Verifique se todos os campos obrigatórios estão preenchidos
+      if (petName && tipo && porte && temperamento && teleBusca) {
+        // Se tele busca for sim, verifique se o campo de dataHora também está preenchido
+        console.log(teleBusca.value)
+        if (teleBusca.value === 'nao') {
+          document.getElementById('submitButton').disabled = false;
+        }
+        else if (teleBusca.value === 'sim' && dataHora) {
+          document.getElementById('submitButton').disabled = false;
+        }
       } else {
-        document.getElementById('submitButton').disabled = false;
+        document.getElementById('submitButton').disabled = true;
       }
-    } else {
-      document.getElementById('submitButton').disabled = true;
     }
-  }
-</script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Chame a função checkFields após a renderização completa da página
+      checkFields();
+    });
+  </script>
+
+  <!-- Controle de exibição da tela da modal de sucesso -->
+  <script>
+    // Adicione um ouvinte de evento ao botão para exibir o modal quando o botão for clicado
+    document.getElementById('continuar').addEventListener('click', function () {
+      $('#successModal').modal('show');
+    });
+  </script>
+
+  <!-- Função para garantir que não seja seleciona data anteiorores a atual -->
+  <script>
+    function checkDateTime() {
+      var selectedDateTime = new Date(document.getElementById('dataHora').value);
+      var currentDateTime = new Date();
+
+      // Verificar se a data selecionada é maior ou igual à data e hora atuais
+      if (selectedDateTime < currentDateTime) {
+        alert("Por favor, selecione uma data e hora futuras.");
+        document.getElementById('dataHora').value = ""; // Limpar a seleção
+      }
+    }
+
+    // Adicione um ouvinte de evento para chamar a função checkDateTime quando a data e a hora forem alteradas
+    document.getElementById('dataHora').addEventListener('change', checkDateTime);
+  </script>
 </body>
+
 </html>

@@ -322,3 +322,21 @@ body {
   cursor: not-allowed; /* Altera o cursor para "não permitido" */
   border-color: #6c757d; /* Cor da borda cinza */
 }
+
+.icons{
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+.pesquisar{
+  margin-right: 15px;
+}
+
+.message {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: normal; /* Altera a fonte para normal */
+  text-align: center;
+}

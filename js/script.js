@@ -25,9 +25,7 @@ function checkFields() {
   
   }
   
-  // Adiciona um ouvinte de eventos a cada campo de entrada para verificar as alterações
-
-  // Add the 'async' keyword before the function declaration
+//Validaçãoes escritas mas não ulitlizadas devido a dificuldade de implementação
   async function validateEmail() {
     var email = document.getElementById('email').value;
     // Verifica se o email é válido
@@ -65,7 +63,7 @@ function checkFields() {
         return true;
   }
 
-var imagens = ["/images/banner.png", "/images/banner.jpg", "/images/imagem5.jpg"];
+var imagens = ["/images/banner3.png", "/images/banner2.png"];
 var indiceAtual = 0;
 
 function mudarImagem() {

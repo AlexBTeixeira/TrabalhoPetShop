@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- CSS Customizado-->
   <link rel="stylesheet" type="text/css" href="/css/login.css">
-  <title>Carrossel de Produtos</title>
+  <title>PetMania Login</title>
 </head>
 
 <body>
-
-
-  <!-- Navbar-->
+  <!-- Navbar -->
   <header class="header">
     <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -28,39 +28,38 @@
 
   <div class="container">
     <div class="row py-5 mt-4 align-items-right">
-      <div class="col-md-7 ">
+      <div class="col-md-7">
+        <!-- Imagem do Banner -->
         <div class="image">
           <img src="images/banner.png" alt="" class="img-fluid mb-5 d-none d-md-block">
         </div>
       </div>
 
-
-
-      <!-- Registeration Form -->
+      <!-- Formulário de Registro -->
       <div class="col-md-7 col-lg-5 ml-auto">
         <form action="#">
           <div class="row">
-
+            <!-- Título do Formulário -->
             <div class="criarconta">
-              <h1 class="text ">Crie a Sua Conta</h1>
+              <h1 class="text">Crie a Sua Conta</h1>
             </div>
 
-            <!-- First Name -->
+            <!-- Primeiro Nome -->
             <div class="input-group col-lg-6 mb-4">
-              <input id="firstName" type="text" name="firstname" placeholder="First Name" class="form-control">
+              <input id="firstName" type="text" name="firstname" placeholder="Primeiro Nome" class="form-control">
             </div>
 
-            <!-- Last Name -->
+            <!-- Ultimo Nome -->
             <div class="input-group col-lg-6 mb-4">
-              <input id="lastName" type="text" name="lastname" placeholder="Last Name" class="form-control">
+              <input id="lastName" type="text" name="lastname" placeholder="Ultimo Nome" class="form-control">
             </div>
 
-            <!-- Email Address -->
+            <!-- Email  -->
             <div class="input-group col-lg-12 mb-4">
-              <input id="email" type="email" name="email" placeholder="Email Address" class="form-control">
+              <input id="email" type="email" name="email" placeholder="Email" class="form-control">
             </div>
 
-            <!-- Phone Number -->
+            <!-- Telefone Celular -->
             <div class="input-group col-lg-12 mb-4">
               <select id="countryCode" name="countryCode" style="max-width: 80px"
                 class="custom-select form-control border-md h-100  text-muted">
@@ -69,31 +68,31 @@
                 <option value="">+244</option>
                 <option value="">+351</option>
               </select>
-              <input id="phoneNumber" type="tel" name="phone" placeholder="Phone Number" class="form-control pl-3">
+              <input id="phoneNumber" type="tel" name="phone" placeholder="Telefone Celular" class="form-control pl-3">
             </div>
 
-            <!-- Password -->
+            <!-- Senha -->
             <div class="input-group col-lg-6 mb-4">
-              <input id="password" type="password" name="password" placeholder="Password" class="form-control">
+              <input id="password" type="password" name="password" placeholder="Senha" class="form-control">
             </div>
 
-            <!-- Password Confirmation -->
+            <!-- Confirmação de Senha -->
             <div class="input-group col-lg-6 mb-4">
               <input id="passwordConfirmation" type="password" name="passwordConfirmation"
-                placeholder="Confirm Password" class="form-control">
+                placeholder="Confirme sua Senha" class="form-control">
             </div>
 
-            <!-- Agreing Terms -->
+            <!-- Aceitar Termos -->
             <div class="input-group col-lg-11 mb-4">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="check">
                 <label class="form-check-label" for="check">
-                  Agree to terms and conditions
+                  Concordo com os termos e condições
                 </label>
               </div>
             </div>
 
-            <!-- Submit Button -->
+            <!-- Botão de Envio -->
             <div class="form-group col-lg-12 mx-auto mb-0">
               <button href="productPage.html" id="submitButton" class="btn btn-primary btn-block py-2"
                 onclick="return submitForm(event)">
@@ -101,45 +100,50 @@
               </button>
             </div>
 
-            <!-- Divider Text -->
+            <!-- Texto de Divisão -->
             <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
               <div class="border-bottom w-100 ml-5"></div>
-              <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
+              <span class="px-2 small text-muted font-weight-bold text-muted">OU</span>
               <div class="border-bottom w-100 mr-5"></div>
             </div>
 
-            <!-- Already Registered -->
+            <!-- Já Registrado -->
             <div class="text-center w-100">
-              <p class="text-muted font-weight-bold">Already Registered? <a href="ProductPage.html" class="text-primary ml-2">Login</a>
+              <p class="text-muted font-weight-bold">Já Registrado? <a href="ProductPage.html"
+                  class="text-primary ml-2">Entrar</a>
               </p>
             </div>
 
           </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-          <!-- Scripts no final do corpo -->
-          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-          <script src="/js/script.js"></script>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/script.js"></script>
 
-          <script>
-            // Chama a função inicialmente para garantir que o botão esteja no estado correto no carregamento da página
-            checkFields();
+  <script>
+    // Chama a função inicialmente para garantir que o botão esteja no estado correto no carregamento da página
+    checkFields();
 
-            // Adiciona um ouvinte de eventos ao botão para chamar a função checkFields
-            function submitForm(event) {
-              event.preventDefault();
+    // Adiciona um ouvinte de eventos ao botão para chamar a função checkFields
+    function submitForm(event) {
+      event.preventDefault();
 
-              // Verifica se os campos estão preenchidos
-              checkFields();
+      // Verifica se os campos estão preenchidos
+      checkFields();
 
-              // Obtém o estado do botão
-              var isDisabled = document.getElementById('submitButton').disabled;
-              // Redireciona para o link desejado se a validação for bem-sucedida
-              if (!isDisabled) {
-                window.location.href = 'ProductPage.html';
-              }
-            }
-          </script>
+      // Obtém o estado do botão
+      var isDisabled = document.getElementById('submitButton').disabled;
+      // Redireciona para o link desejado se a validação for bem-sucedida
+      if (!isDisabled) {
+        window.location.href = 'ProductPage.html';
+      }
+    }
+  </script>
 </body>
 
 </html>
